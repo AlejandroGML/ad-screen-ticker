@@ -1,9 +1,11 @@
 MCU ?= atmega328p
 F_CPU ?= 16000000UL
 
-CXX ?= avr-g++
-OBJCOPY ?= avr-objcopy
-SIZE ?= avr-size
+# Plain '=' (not '?='): make has a built-in default for CXX (= g++), and '?='
+# would silently keep the host compiler. Command line still overrides: make CXX=...
+CXX = avr-g++
+OBJCOPY = avr-objcopy
+SIZE = avr-size
 
 TARGET ?= ad-screen-ticker
 
