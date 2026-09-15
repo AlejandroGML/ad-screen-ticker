@@ -100,6 +100,8 @@ make flash PROGRAMMER=usbasp PORT=/dev/ttyUSB0
 
 [Wokwi](https://wokwi.com/projects/445497618841194497) is a browser-based AVR
 simulator — the shared project boots straight into the ad rotation, LCD included.
+The simulator config is versioned in [`sim/`](sim/): `diagram.json` (wiring) and
+`sketch.ino` (workflow notes).
 
 To run a fresh build instead of the uploaded one:
 
@@ -118,6 +120,7 @@ src/                implementations
   app_controller.cpp  display cycle timing and fallbacks
   lcd_driver.cpp    HD44780 4-bit driver
   millis.cpp        third-party millisecond tracker (see below)
+sim/                Wokwi simulator config (diagram + sketch notes)
 Makefile            build + flash targets
 ```
 
