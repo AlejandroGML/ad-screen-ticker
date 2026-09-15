@@ -1,0 +1,11 @@
+# Build artifacts
+*.o
+*.elf
+*.hex
+*.lst
+*.map
+
+# Tooling
+.vscode/
+.clion/
+compile_commands.json
