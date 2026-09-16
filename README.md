@@ -4,7 +4,7 @@ Ad-rotation firmware for a 16x2 HD44780 LCD, written in modern C++20 for the
 ATmega328p (Arduino Uno class hardware). Advertisers who pay more appear more
 often — selection is a paid-weighted lottery, not a fixed playlist.
 
-**Demo:** [Wokwi simulation](https://wokwi.com/projects/445497618841194497) —
+**Demo:** [Wokwi simulation](https://wokwi.com/projects/475266320455883777) —
 runs the compiled firmware in your browser, no hardware needed.
 
 ## What it does
@@ -98,7 +98,7 @@ make flash PROGRAMMER=usbasp PORT=/dev/ttyUSB0
 
 ## Run it in the simulator (no hardware)
 
-[Wokwi](https://wokwi.com/projects/445497618841194497) is a browser-based AVR
+[Wokwi](https://wokwi.com/projects/475266320455883777) is a browser-based AVR
 simulator — the shared project boots straight into the ad rotation, LCD included.
 The simulator config is versioned in [`sim/`](sim/): `diagram.json` (wiring) and
 `sketch.ino` (workflow notes).
